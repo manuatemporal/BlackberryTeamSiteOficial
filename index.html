@@ -450,12 +450,13 @@
       </div>
       <!-- Card 2 -->
       <div class="col-md-4">
-        <div class="project-card h-100 position-relative">
+        <div class="project-card h-100 position-relative" data-bs-toggle="modal" data-bs-target="#modalMecanicas" style="cursor:pointer;">
           <div class="card-fav"><i class="bi bi-heart-fill"></i></div>
           <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop" alt="Mecânicas Únicas" />
           <div class="project-card-body">
             <div class="project-card-title">Mecânicas Únicas</div>
             <p class="project-card-desc">Jogabilidade inovadora que combina estratégia com momentos de pura diversão.</p>
+            <small class="text-purple-main" style="color:var(--purple-main);font-weight:600;font-size:.8rem;">Ver mecânicas &rarr;</small>
           </div>
         </div>
       </div>
@@ -869,6 +870,53 @@
     </div>
   </div>
 </footer>
+
+<!-- ════════════ MODAL MECÂNICAS ════════════ -->
+<div class="modal fade" id="modalMecanicas" tabindex="-1" aria-labelledby="modalMecanicasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="border-radius:1.25rem;overflow:hidden;border:none;">
+      <div class="modal-header" style="background:var(--gradient-hero);border:none;padding:1.5rem 2rem;">
+        <div>
+          <h5 class="modal-title" id="modalMecanicasLabel" style="font-family:'Syne',sans-serif;font-weight:800;color:#fff;font-size:1.4rem;margin-bottom:.25rem;">Mecânicas Únicas</h5>
+          <span style="color:rgba(255,255,255,.75);font-size:.82rem;letter-spacing:.04em;">ATLAS · Blackberry Team</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body" style="padding:2rem 2.25rem;background:#fff;">
+
+        <!-- Dionísio -->
+        <p style="font-family:'Syne',sans-serif;font-weight:700;color:var(--purple-main);font-size:1.05rem;margin-bottom:.75rem;">🦁 Dionísio</p>
+        <p style="font-size:.95rem;color:#374151;line-height:1.7;margin-bottom:.75rem;">
+          <strong>Movimentação básica:</strong> pulo e andar.
+        </p>
+        <p style="font-size:.95rem;color:#374151;line-height:1.7;margin-bottom:.75rem;">
+          <strong>⛰️ Sistema de escalada:</strong> utilizamos o fato de que as Montanhas de Atlas é uma região montanhosa e aplicaremos um sistema onde Dionísio poderá escalar obstáculos (dependendo de quais são).
+        </p>
+        <p style="font-size:.95rem;color:#374151;line-height:1.7;margin-bottom:1.5rem;">
+          <strong>⚔️ Sistema de ataque:</strong> Dionísio conseguirá atacar inimigos ao apertar a tecla <kbd style="background:#F3F4F6;border:1px solid #D1D5DB;border-radius:.3rem;padding:.1rem .4rem;font-size:.85rem;">X</kbd>.
+        </p>
+
+        <hr style="border-color:#E9D5FF;margin-bottom:1.5rem;">
+
+        <!-- Telêmaco -->
+        <p style="font-family:'Syne',sans-serif;font-weight:700;color:var(--purple-main);font-size:1.05rem;margin-bottom:.75rem;">🦡 Telêmaco</p>
+        <p style="font-size:.95rem;color:#374151;line-height:1.7;margin-bottom:.75rem;">
+          <strong>Movimentação básica:</strong> pulo e andar.
+        </p>
+        <p style="font-size:.95rem;color:#374151;line-height:1.7;margin-bottom:.75rem;">
+          <strong>⛏️ Sistema de Escavação:</strong> em certos locais de níveis, Telêmaco poderá escavar e ter acesso a locais subterrâneos, em que ele deve procurar itens chave que abrirão caminho para Dionísio e para passar de nível, apertando a tecla <kbd style="background:#F3F4F6;border:1px solid #D1D5DB;border-radius:.3rem;padding:.1rem .4rem;font-size:.85rem;">P</kbd>.
+        </p>
+        <p style="font-size:.95rem;color:#374151;line-height:1.7;margin-bottom:0;">
+          <strong>🎒 Sistema de "Pegar Objetos":</strong> há certos itens que Telêmaco pode pegar e interagir utilizando a tecla <kbd style="background:#F3F4F6;border:1px solid #D1D5DB;border-radius:.3rem;padding:.1rem .4rem;font-size:.85rem;">L</kbd>. Por exemplo, ele pode resolver puzzles e abrir caminho para ele e para Dionísio.
+        </p>
+
+      </div>
+      <div class="modal-footer" style="border:none;background:#F5F0FF;padding:1rem 2.25rem;">
+        <button type="button" class="btn btn-cta" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ════════════ MODAL HISTÓRIA ════════════ -->
 <div class="modal fade" id="modalHistoria" tabindex="-1" aria-labelledby="modalHistoriaLabel" aria-hidden="true">
